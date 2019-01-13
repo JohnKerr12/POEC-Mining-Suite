@@ -25,8 +25,6 @@ def hyperlink():
 
 def hyperlink2():
     webbrowser.open_new(r"http:209.97.185.191:3001/")
-    
-    
 
 if __name__ == "__main__":
 
@@ -39,7 +37,6 @@ if __name__ == "__main__":
     def reload():
         python = sys.executable
         os.execl(python, python, * sys.argv)
-              
         
     filemenu.add_command(label="Reload", command=reload)
     filemenu.add_command(label="Exit", command=exit1)
@@ -51,8 +48,6 @@ if __name__ == "__main__":
     setup = LabelFrame(root, text = "Setup")
     setup.pack(fill = "both", expand = "yes")
 
-
- 
     stratum = Label(setup, text="Stratum:").place(x = 30, y = 10)
     stratum1 = Entry()
     stratum1.insert(0, "Enter the stratum address + port (E.g. 1.domain.com:port)")
@@ -70,7 +65,6 @@ if __name__ == "__main__":
     #extra = Entry()
     #extra.place(x = 90, y = 120, width = 350)
 
- 
     def edit():
         with open('poec.bat', 'wt') as f:
             if not stratum1.get():
@@ -107,8 +101,6 @@ if __name__ == "__main__":
     help = Button(text = "Need help?", command = help2).place(x=460, y = 25)
     Poeight = Button(text = "Poeight.net", command = hyperlink).place(x=460, y = 70)
     blockexplorer = Button(text = "Block Explorer", command = hyperlink2).place(x=460, y = 120)
-
-
 
     def on_closing():
         if messagebox.askokcancel("Quit", "Do you really want to quit?"):
