@@ -10,7 +10,7 @@ def exit1():
     root.destroy()
 
 def help1():
-    lines = ('POEC Mining suite', '', 'http://www.poeight.net/', '', '© Piece of Eight 2018 all rights reserved')
+    lines = ('POEC Mining suite', '', 'http://www.poeight.net/', '', '© Piece of Eight 2019 all rights reserved')
     msg = messagebox.showinfo('About', "\n".join(lines))
 
 def help2():
