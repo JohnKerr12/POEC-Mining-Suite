@@ -95,7 +95,6 @@ if __name__ == "__main__":
         else:
             subprocess.call([r'poec.bat'])
         
-
     save = Button(text = "Save batch file", command = edit).place(x=120, y = 200)
     save = Button(text = "Start Miner", command = start).place(x=220, y = 200)
     help = Button(text = "Need help?", command = help2).place(x=460, y = 25)
